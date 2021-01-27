@@ -9,50 +9,62 @@
   <title>Survey</title>
 </head>
 <body>
+
   <h2>Welcome to this important survey</h2>
   <p>This survey will ask you very imporant questions about your life.</p>
+
   <h3>Question 1: What's your favorite beverage?</h3> 
-  <select class="form-control" id="beverage">
-    <option>Soda</option>
-    <option>Tea</option>
-    <option>Kombucha</option>
-    <option>Coffee</option>
-    <option>Water</option> 
-  </select>
-  
-  <h3>Question 2: What is your favorite food?</h3>
-  <div class="radio">
-    <label>
-      <input type="radio" name="meal" value="pizza" checked>
-      Pizza
-    </label>
-  </div>
-  <div class="radio">
-    <label>
-      <input type="radio" name="meal" value="nachos">
-      Nachos
-    </label>
-  </div>
-  <div class="radio">
-    <label>
-      <input type="radio" name="meal" value="friedChickenSandwich">
-      Fried Chicken Sandwich 
-    </label>
-  </div>
-  
-  <h3>Question 3: What's your birthday?</h3>
-  <div class="form-group">
-    <label for="born">Date of birth:</label>
-    <input id="born" class="form-control" type="date">
-  </div>
-  
-  <h3>Question 4: Find your favorite color</h3>
+  <form id ="survey">
+    <select class="form-control" id="beverage">
+      <option>Soda</option>
+      <option>Tea</option>
+      <option>Kombucha</option>
+      <option>Coffee</option>
+      <option>Water</option> 
+    </select>
+    
+    <h3>Question 2: What is your favorite food?</h3>
+    <div class="radio">
+      <label>
+        <input type="radio" name="meal" value="pizza" checked>
+        Pizza
+      </label>
+    </div>
+    <div class="radio">
+      <label>
+        <input type="radio" name="meal" value="nachos">
+        Nachos
+      </label>
+    </div>
+    <div class="radio">
+      <label>
+        <input type="radio" name="meal" value="friedChickenSandwich">
+        Fried Chicken Sandwich 
+      </label>
+    </div>
+    
+    <h3>Question 3: What's your birthday?</h3>
+    <div class="form-group">
+      <label for="born">Date of birth:</label>
+      <input id="born" class="form-control" type="date">
+    </div>
+    
+    <h3>Question 4: Find your favorite color</h3>
+    <div class="form-group">
+      <label for="color">Find the color closest to your favorite:</label>
+      <input id="color" class="form-control" type="color">
+    </div>
 
-  <div class="form-group">
-    <label for="color">Find the color closest to your favorite:</label>
-    <input id="color" class="form-control" type="color">
-  </div>
+    <button type="submit" class="btn">Submit!</button>
+</form>
 
+  <h2>Your answers</h2>
+
+  <p>Your favorites:</p> 
+  
+  <div id = "output">
+
+  </div>
 </body>
 </html>
 
